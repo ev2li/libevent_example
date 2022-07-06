@@ -22,5 +22,8 @@ add_library(ev2li SHARED ${LIB_SRC})
 force_redefine_file_macro_for_sources(ev2li) #__FILE__
 
 ev2li_add_executable(test_first_eventlib "tests/first_libevent.cc" ev2li "${LIBS}")
+ev2li_add_executable(test_server "tests/test_server.cc" ev2li "${LIBS}")
+ev2li_add_executable(test_config "tests/test_config.cc" ev2li "${LIBS}")
+ev2li_add_executable(test_signal "tests/test_signal.cc" ev2li "${LIBS}")
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
