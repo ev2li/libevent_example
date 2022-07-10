@@ -36,7 +36,10 @@ void test01(){
         //开始监听
         listen(sock, 10);
         //开始接收连接事件,默认水平触发
-        event *ev = event_new(base, sock, EV_READ|EV_PERSIST, [](evutil_socket_t s, short w, void *arg){
+        /*水平触发只要有数据没处理，会一直进入*/
+        /*边缘触发*/
+        // event *ev = event_new(base, sock, EV_READ|EV_PERSIST, [](evutil_socket_t s, short w, void *arg){
+        event *ev = event_new(base, sock, EV_READ|EV_PERSIST| EV_ET, [](evutil_socket_t s, short w, void *arg){
                         std::cout << "listen_cb"<< std::endl;
                         sockaddr_in sin;
                         socklen_t size = sizeof(sin);
