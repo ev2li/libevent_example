@@ -31,5 +31,6 @@ ev2li_add_executable(test_event_server "tests/test_event_server.cc" ev2li "${LIB
 ev2li_add_executable(test_signal_loop "tests/test_signal_loop.cc" ev2li "${LIBS}")
 ev2li_add_executable(test_buffer "tests/test_buffer.cc" ev2li "${LIBS}")
 ev2li_add_executable(test_buffer_client "tests/test_buffer_client.cc" ev2li "${LIBS}")
+ev2li_add_executable(test_buffer_filter "tests/test_buffer_filter.cc" ev2li "${LIBS}")
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
