@@ -5,6 +5,8 @@
 #include <memory.h>
  #include "zlib_server.hpp"
 #include "zlib_client.hpp"
+
+
 void test(){
         //忽略管道信号，发送数据给已关闭的socket
         if(signal(SIGPIPE, SIG_IGN) == SIG_ERR){

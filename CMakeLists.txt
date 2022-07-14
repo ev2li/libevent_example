@@ -15,6 +15,7 @@ set(LIB_SRC
 
 set(LIBS
         event
+        z
 )
 
 add_library(ev2li SHARED ${LIB_SRC})
