@@ -38,5 +38,6 @@ ev2li_add_executable(test_buffer_filter_zlib "tests/test_buffer_filter_zlib.cc" 
 ev2li_add_executable(test_http_server "tests/test_http_server.cc" ev2li "${LIBS}")
 ev2li_add_executable(test_http_client "tests/test_http_client.cc" ev2li "${LIBS}")
 ev2li_add_executable(test_thread_pool "tests/test_thread_pool.cc" ev2li "${LIBS}")
+ev2li_add_executable(test_ftp_server "tests/test_ftp_server.cc" ev2li "${LIBS}")
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
