@@ -12,6 +12,7 @@ public:
 
         //回复cmd消息
         void resCMD(std::string msg);
+        
         //连接数据通道
         void connectPORT();
         //用来发送建立了连接的数据通道
